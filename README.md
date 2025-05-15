@@ -1,3 +1,4 @@
+
 # ☕ <Caffeine/> — Coffee Shop for Coders
 
 **<Caffeine/>** adalah aplikasi fullstack bertema kedai kopi online yang dirancang khusus untuk programmer. Menghadirkan suasana cozy dan ramah ngoding, aplikasi ini memungkinkan pengguna untuk melihat menu, memesan minuman, melakukan checkout, dan mencetak struk langsung dari perangkat mereka.
@@ -7,28 +8,29 @@
 ## 🛠️ Teknologi yang Digunakan
 
 ### Frontend
-- **Next.js** — Framework React modern untuk SSR dan SPA
-- **Tailwind CSS** — Utility-first styling
-- **Shadcn/UI + Radix UI** — Komponen UI responsif dan accessible
-- **React Hook Form + Zod** — Validasi form efisien dan scalable
-- **Recharts** — Visualisasi data statistik
-- **Lucide Icons** — Ikon minimalis untuk antarmuka modern
+- **Next.js** — Framework React untuk SSR dan SPA
+- **Tailwind CSS** — Utility-first CSS untuk styling cepat dan responsif
+- **Radix UI + Shadcn/UI** — Komponen UI modern
+- **React Hook Form + Zod** — Validasi form efisien
+- **Recharts** — Visualisasi data
+- **Lucide Icons** — Ikon modern dan ringan
 
 ### Backend
-- **Express.js** — REST API ringan dan fleksibel
-- **MySQL (via mysql2)** — Database relasional untuk menu, user, dan transaksi
-- **bcryptjs** — Untuk enkripsi password
+- **Express.js** — Web framework minimalis untuk REST API
+- **MySQL (via mysql2)** — Database relasional
+- **bcryptjs** — Enkripsi password
 - **express-session** — Autentikasi berbasis session
-- **dotenv, cors, body-parser** — Middleware pendukung konfigurasi dan keamanan
+- **dotenv, cors, body-parser** — Middleware pendukung
 
 ---
 
 ## 📁 Struktur Folder
 
+```
 caffeine-fullstack/
-├── backend/ # Backend Express API
-├── frontend/ # Frontend Next.js App
-
+├── backend/   # Backend Express API
+├── frontend/  # Frontend Next.js App
+```
 
 ---
 
@@ -37,23 +39,25 @@ caffeine-fullstack/
 ### Umum
 - Halaman navigasi: Home, Tentang Kami, Menu, Kontak Kami
 - Desain dark theme yang cozy dan nyaman untuk programmer
-- Login & Register user
-- Desain responsif di desktop dan mobile
+- Fitur Login & Register user
+- Desain responsif (mobile & desktop)
 
 ### Menu & Pemesanan
-- Tampilkan daftar menu minuman dan makanan
-- Checkout langsung di dalam modal (`CheckoutModal.tsx`)
-- Redirect otomatis ke halaman `successful-transaction.tsx` setelah transaksi
-- Receipt modal: lihat riwayat pesanan dan cetak struk
+- Menampilkan daftar menu minuman dan makanan
+- Checkout langsung di modal (`CheckoutModal.tsx`)
+- Redirect ke halaman `successful-transaction.tsx` setelah pembayaran
+- Receipt Modal: menampilkan riwayat pesanan dan cetak struk
 
 ---
 
 ## 🧠 Konsep Desain
 
-Tempat ngopi bukan cuma tempat ngopi. `<Caffeine/>` dirancang khusus sebagai kafe virtual (dan nyata) bagi programmer untuk:
-- Nugas, coding, atau meeting online dengan nyaman
-- Ditemani aroma kopi dan playlist lo-fi
-- Bisa memesan makanan dan minuman tanpa ganggu workflow
+Tempat ngopi bukan cuma tempat ngopi.
+
+`<Caffeine/>` dirancang sebagai kafe virtual dan fisik bagi para developer, programmer, dan pecinta teknologi yang ingin:
+- Nugas, ngoding, atau meeting dengan nyaman
+- Menikmati aroma kopi dan alunan lo-fi playlist
+- Memesan menu favorit tanpa ganggu workflow
 
 ---
 
@@ -61,48 +65,61 @@ Tempat ngopi bukan cuma tempat ngopi. `<Caffeine/>` dirancang khusus sebagai kaf
 
 ### 1. Clone repository
 
+```bash
 git clone https://github.com/yourusername/caffeine-fullstack.git
 cd caffeine-fullstack
+```
 
-2. Jalankan Backend
-Copy
-Edit
+### 2. Jalankan Backend
+
+```bash
 cd backend
 npm install
 npm start
-3. Jalankan Frontend
-Copy
-Edit
+```
+
+### 3. Jalankan Frontend
+
+```bash
 cd ../frontend
 npm install
 npm run dev
-4. Konfigurasi Environment (.env)
-Pastikan kamu sudah membuat file .env di folder backend/ dengan isi sebagai berikut:
+```
 
-env
-Copy
-Edit
+### 4. Konfigurasi Environment (`.env`)
+
+Buat file `.env` di folder `backend/` dengan isi berikut:
+
+```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=
 DB_NAME=caffeine_db
 SESSION_SECRET=supersecretkey
-🙌 Kontribusi
-Pull request terbuka untuk semua jenis kontribusi — mulai dari penambahan fitur, perbaikan bug, hingga peningkatan desain UI/UX.
+```
 
-Fork repo ini
+---
 
-Buat branch baru
+## 🙌 Kontribusi
 
-Commit perubahan
+Pull request terbuka untuk semua jenis kontribusi:
 
-Ajukan pull request
+- 🚀 Penambahan fitur
+- 🐛 Perbaikan bug
+- 🎨 Peningkatan UI/UX
 
-🧾 Lisensi
-MIT License © 2025 — <Caffeine/> by Muhammad Alvin Faris
+Langkah kontribusi:
+1. Fork repo ini
+2. Buat branch baru
+3. Commit perubahan
+4. Buat pull request
 
-Made with ❤️ and ☕ by Developer @ <Caffeine/>
+---
 
+## 🧾 Lisensi
 
+MIT License © 2025 — `<Caffeine/>` by **Muhammad Alvin Faris**
 
+---
 
+## Made with ❤️ and ☕ by Developer @ <Caffeine/>
